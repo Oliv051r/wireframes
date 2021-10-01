@@ -6,3 +6,30 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+h2,
+h3 {
+  font-family: "Staatliches", cursive;
+}
+
+p,
+h4 {
+  font-family: "Raleway", sans-serif;
+}
+
+#voresprodukter {
+  background-color: #fdf6f0;
+}
+
+#voresprodukter h2 {
+  color: #dea19a;
+  font-size: 42px;
+}
+
+#sektiontop {
+  background-color: #f8e2cf;
+}
+
+body {
+  background-color: #f9f9f9;
+}
