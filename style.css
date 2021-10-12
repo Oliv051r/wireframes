@@ -1,10 +1,19 @@
+.navbar {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.bg-light {
+  --bs-bg-opacity: 0;
+}
+
 .masthead {
   height: 100vh;
-  min-height: 500px;
-  background-image: url("img/muffins.jpg");
+  min-height: 820px;
+  background-image: url("img/splashbillede.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: #fdf6f0;
 }
 
 h2,
@@ -12,9 +21,40 @@ h3 {
   font-family: "Staatliches", cursive;
 }
 
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  width: 86%;
+}
+
+@media (min-width: 1000px) {
+  .container,
+  .container-fluid,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    width: 95%;
+  }
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
 p,
-h4 {
+h4,
+nav {
   font-family: "Raleway", sans-serif;
+}
+
+p {
+  line-height: 1.8;
 }
 
 #voresprodukter {
@@ -27,9 +67,117 @@ h4 {
 }
 
 #sektiontop {
-  background-color: #f8e2cf;
+  background-color: #f7ca99;
 }
 
 body {
-  background-color: #f9f9f9;
+  background-color: #f7ca99;
+}
+
+.madpakke {
+  background-color: #f8e2cf;
+}
+
+h3 {
+  color: #ea9d6f;
+}
+
+.madpakke {
+  border: 15px solid #f8e2cf;
+  box-shadow: inset 0px 0px 0px 3px #f9f9f9;
+  box-sizing: border-box;
+}
+
+#sektionmidter,
+#sektionmidter2 {
+  background-color: #fdf6f0;
+}
+
+#sektionmidter p,
+#sektionmidter2 p {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.center1 {
+  padding-top: 12%;
+  position: relative;
+}
+
+.center {
+  padding-top: 15%;
+  position: relative;
+}
+
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.image2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.gron {
+  color: #344e16;
+  padding-top: 12px;
+}
+
+.blaa {
+  color: #016e83;
+  padding-top: 12px;
+}
+
+.gul {
+  color: #a58500;
+  padding-top: 12px;
+}
+
+.orange {
+  color: #9d4913;
+  padding-top: 12px;
+}
+
+.overskrift1 {
+  padding-top: 50px;
+}
+
+.nyhed {
+  font-size: 70px;
+}
+
+.arrow {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70px;
+  margin-top: -50px;
+  cursor: pointer;
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
 }
