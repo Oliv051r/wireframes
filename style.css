@@ -47,6 +47,10 @@ h3 {
   cursor: pointer;
 }
 
+a.nav-link {
+  text-align: right;
+}
+
 p,
 h4,
 nav {
