@@ -48,3 +48,18 @@ gsap.from(".image2", {
     scrub: true,
   },
 });
+
+const highlight = document.getElementById("highlight-style");
+const mode = document.getElementById("mode");
+
+const highlights = document.querySelectorAll(".text-highlight");
+
+highlights.forEach((highlight) => {
+  ScrollTrigger.create({
+    trigger: highlight,
+    markers: true,
+    start: "-90px center",
+    onEnter: () => highlight.classList.add("active"),
+    onEnterBack: () => highlight.classList.remove("active"),
+  });
+});

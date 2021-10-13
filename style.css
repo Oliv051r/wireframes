@@ -74,12 +74,13 @@ body {
   background-color: #f7ca99;
 }
 
-.madpakke {
-  background-color: #f8e2cf;
+h3 {
+  color: #d37d49;
+  font-size: 31px;
 }
 
-h3 {
-  color: #ea9d6f;
+.madpakke {
+  background-color: #f8e2cf;
 }
 
 .madpakke {
@@ -151,6 +152,7 @@ h3 {
 
 .nyhed {
   font-size: 70px;
+  color: #4a3d36;
 }
 
 .arrow {
@@ -180,4 +182,31 @@ h3 {
   60% {
     transform: translateY(-10px);
   }
+}
+
+#sektionbund {
+  height: 85vh;
+  min-height: 300px;
+  background-image: url("img/muffins.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.text-highlight {
+  --bg-color-highlight: #d37d49;
+  --duration: 1.5s;
+  --ease: cubic-bezier(0.25, 1, 0.5, 1);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size var(--duration) var(--ease);
+}
+.text-highlight.active {
+  background-size: 100% 100%;
+  background-image: linear-gradient(var(--bg-color-highlight) 0 0);
+}
+
+.mark,
+mark {
+  background-color: #f8e2cf;
 }
