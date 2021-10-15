@@ -16,22 +16,24 @@ sections.forEach((section) => {
       scrollTrigger: {
         trigger: section,
         start: "0% 80%",
-        end: "+=400",
+        end: "+=450",
         scrub: true,
         ease: "none",
       },
     })
     .from(h2, {
-      duration: 1,
+      duration: 10,
       opacity: 0,
     })
     .from(h3, {
+      duration: 10,
       opacity: 0,
     })
     .from(p, {
       opacity: 0,
       y: 100,
       stagger: 0.1,
+      duration: 10,
     });
 });
 
@@ -43,9 +45,11 @@ gsap.from(".image2", {
   stagger: 0.3,
   scrollTrigger: {
     trigger: ".image2",
-    start: "30% 80%",
-    end: "+=190",
+    start: "20% 90%",
+    end: "+=400",
+    duration: 10,
     scrub: true,
+    markers: true,
   },
 });
 
@@ -57,7 +61,6 @@ const highlights = document.querySelectorAll(".text-highlight");
 highlights.forEach((highlight) => {
   ScrollTrigger.create({
     trigger: highlight,
-    markers: true,
     start: "-90px center",
     onEnter: () => highlight.classList.add("active"),
     onEnterBack: () => highlight.classList.remove("active"),
